@@ -13,5 +13,5 @@ protocol ViperRouterProtocol: class {
     static func pushViewController(to destinationViewController: UIViewController, from sourceViewController: UIViewController, animated: Bool)
     static func popViewController(_ viewController: UIViewController, animated: Bool)
     static func presentViewController(toPresent viewController: UIViewController,from sourceViewController: UIViewController, animated: Bool, completion: (()->())?)
-    static func dismissViewController(toPresent viewController: UIViewController,from sourceViewController: UIViewController, animated: Bool, completion: (()->())?)
+    static func dismissViewController(_ viewController: UIViewController, animated: Bool, completion: (()->())?)
 }

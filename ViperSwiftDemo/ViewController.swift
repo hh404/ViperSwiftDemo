@@ -22,11 +22,15 @@ class ViewController: UIViewController {
 
 
 extension ViewController: ViperRouterProtocol {
-    static func presentViewController(toPresent viewController: UIViewController, from sourceViewController: UIViewController, animated: Bool, completion: (() -> ())?) {
+    static func popViewController(_ viewController: UIViewController, animated: Bool) {
         
     }
     
-    static func dismissViewController(toPresent viewController: UIViewController, from sourceViewController: UIViewController, animated: Bool, completion: (() -> ())?) {
+    static func dismissViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> ())?) {
+        
+    }
+    
+    static func presentViewController(toPresent viewController: UIViewController, from sourceViewController: UIViewController, animated: Bool, completion: (() -> ())?) {
         
     }
     
@@ -34,9 +38,7 @@ extension ViewController: ViperRouterProtocol {
         
     }
     
-    static func popViewController(_ viewController: UIViewController, animated: Bool) {
-        
-    }
+   
     
 //    func pushViewController(to destinationViewController: UIViewController, from source: UIViewController, animated: Bool) {
 //

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol NoteListViewProtocol: class {
-     func noteListTableView() -> UITableView
+    var noteListTableView: UITableView? { get }
     func cellForRowAtIndexPath(_ indexPath: IndexPath, text: String, detailText: String) -> UITableViewCell
 }
 

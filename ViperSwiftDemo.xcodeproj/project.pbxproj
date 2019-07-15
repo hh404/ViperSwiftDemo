@@ -21,6 +21,14 @@
 		D82322AF22D896EB00F95A84 /* ViperInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322AE22D896EB00F95A84 /* ViperInteractorProtocol.swift */; };
 		D82322B122D8976600F95A84 /* ViperWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B022D8976600F95A84 /* ViperWireframeProtocol.swift */; };
 		D82322B322D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B222D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift */; };
+		D82322B522DC27DD00F95A84 /* NoteListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B422DC27DD00F95A84 /* NoteListWireframe.swift */; };
+		D82322B822DC2C1D00F95A84 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B722DC2C1D00F95A84 /* Router.swift */; };
+		D82322BA22DC2E6F00F95A84 /* UIApplicationRouterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B922DC2E6F00F95A84 /* UIApplicationRouterExtension.swift */; };
+		D82322BC22DC2F0000F95A84 /* ViperRouterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322BB22DC2F0000F95A84 /* ViperRouterExtension.swift */; };
+		D82322BE22DC308600F95A84 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322BD22DC308600F95A84 /* LoginBuilder.swift */; };
+		D82322C022DC542900F95A84 /* NoteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322BF22DC542900F95A84 /* NoteListRouter.swift */; };
+		D82322C222DC664500F95A84 /* NoteListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322C122DC664500F95A84 /* NoteListModuleBuilder.swift */; };
+		D82322C422DC677500F95A84 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322C322DC677500F95A84 /* NoteListViewController.swift */; };
 		EC2CA0D922D97951006DF213 /* LoginViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */; };
 		EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */; };
 		EC2CA0DD22D98852006DF213 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */; };
@@ -80,6 +88,14 @@
 		D82322AE22D896EB00F95A84 /* ViperInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractorProtocol.swift; sourceTree = "<group>"; };
 		D82322B022D8976600F95A84 /* ViperWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperWireframeProtocol.swift; sourceTree = "<group>"; };
 		D82322B222D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectViperAssemblyExtension.swift; sourceTree = "<group>"; };
+		D82322B422DC27DD00F95A84 /* NoteListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListWireframe.swift; sourceTree = "<group>"; };
+		D82322B722DC2C1D00F95A84 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D82322B922DC2E6F00F95A84 /* UIApplicationRouterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationRouterExtension.swift; sourceTree = "<group>"; };
+		D82322BB22DC2F0000F95A84 /* ViperRouterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouterExtension.swift; sourceTree = "<group>"; };
+		D82322BD22DC308600F95A84 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		D82322BF22DC542900F95A84 /* NoteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRouter.swift; sourceTree = "<group>"; };
+		D82322C122DC664500F95A84 /* NoteListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListModuleBuilder.swift; sourceTree = "<group>"; };
+		D82322C322DC677500F95A84 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDelegate.swift; sourceTree = "<group>"; };
 		EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
@@ -149,6 +165,7 @@
 		D823227722D883D300F95A84 /* ViperSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D82322B622DC2BD600F95A84 /* Router */,
 				EC2CA0F522DADC0C006DF213 /* NoteListModule */,
 				EC2CA0F422DADC0C006DF213 /* NoteModel */,
 				EC2CA0D722D97943006DF213 /* LoginModule */,
@@ -187,6 +204,16 @@
 			path = ViperSwiftDemoUITests;
 			sourceTree = "<group>";
 		};
+		D82322B622DC2BD600F95A84 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D82322B722DC2C1D00F95A84 /* Router.swift */,
+				D82322B922DC2E6F00F95A84 /* UIApplicationRouterExtension.swift */,
+				D82322BB22DC2F0000F95A84 /* ViperRouterExtension.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		EC2CA0D722D97943006DF213 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +228,7 @@
 				EC2CA0E422D98A56006DF213 /* LoginViewPresenter.swift */,
 				EC2CA0EC22D9F742006DF213 /* LoginViewController.swift */,
 				EC2CA0ED22D9F743006DF213 /* LoginViewController.xib */,
+				D82322BD22DC308600F95A84 /* LoginBuilder.swift */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -239,6 +267,10 @@
 				EC2CA10022DB4CB0006DF213 /* NoteListViewProtocol.swift */,
 				EC2CA10222DB4D7A006DF213 /* NoteListInteractor.swift */,
 				EC2CA10422DB816A006DF213 /* NoteListViewPresenter.swift */,
+				D82322B422DC27DD00F95A84 /* NoteListWireframe.swift */,
+				D82322BF22DC542900F95A84 /* NoteListRouter.swift */,
+				D82322C122DC664500F95A84 /* NoteListModuleBuilder.swift */,
+				D82322C322DC677500F95A84 /* NoteListViewController.swift */,
 			);
 			path = NoteListModule;
 			sourceTree = "<group>";
@@ -379,24 +411,32 @@
 				D82322B122D8976600F95A84 /* ViperWireframeProtocol.swift in Sources */,
 				EC2CA10122DB4CB0006DF213 /* NoteListViewProtocol.swift in Sources */,
 				EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */,
+				D82322BC22DC2F0000F95A84 /* ViperRouterExtension.swift in Sources */,
 				D82322AD22D892D900F95A84 /* ViperRouterProtocol.swift in Sources */,
 				EC2CA0EE22D9F743006DF213 /* LoginViewController.swift in Sources */,
 				EC2CA0F722DADC4B006DF213 /* NoteModel.swift in Sources */,
+				D82322C422DC677500F95A84 /* NoteListViewController.swift in Sources */,
 				D82322AB22D8880700F95A84 /* ViperPresenterProtocol.swift in Sources */,
 				D82322A922D886CE00F95A84 /* ViperViewProtocol.swift in Sources */,
 				D823227922D883D300F95A84 /* AppDelegate.swift in Sources */,
 				D82322A722D8840300F95A84 /* ViperViewEventHandler.swift in Sources */,
+				D82322BA22DC2E6F00F95A84 /* UIApplicationRouterExtension.swift in Sources */,
+				D82322C022DC542900F95A84 /* NoteListRouter.swift in Sources */,
+				D82322BE22DC308600F95A84 /* LoginBuilder.swift in Sources */,
 				EC2CA0E922D98DB1006DF213 /* UserModel.swift in Sources */,
 				EC2CA0E122D989A1006DF213 /* LoginViewEventHandler.swift in Sources */,
 				EC2CA0FB22DB443A006DF213 /* NoteListViewEventHandler.swift in Sources */,
 				EC2CA0D922D97951006DF213 /* LoginViewDelegate.swift in Sources */,
+				D82322C222DC664500F95A84 /* NoteListModuleBuilder.swift in Sources */,
 				EC2CA0F922DB4157006DF213 /* NoteListDataService.swift in Sources */,
 				EC2CA0DD22D98852006DF213 /* LoginInteractorInput.swift in Sources */,
 				EC2CA0E322D989F1006DF213 /* LoginViewWireframe.swift in Sources */,
 				EC2CA0EB22D98E3A006DF213 /* LoginService.swift in Sources */,
 				EC2CA0DF22D9890F006DF213 /* LoginInteractor.swift in Sources */,
 				EC2CA10322DB4D7A006DF213 /* NoteListInteractor.swift in Sources */,
+				D82322B822DC2C1D00F95A84 /* Router.swift in Sources */,
 				D82322AF22D896EB00F95A84 /* ViperInteractorProtocol.swift in Sources */,
+				D82322B522DC27DD00F95A84 /* NoteListWireframe.swift in Sources */,
 				EC2CA0FD22DB44BA006DF213 /* NoteListInteractorInput.swift in Sources */,
 				D82322B322D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift in Sources */,
 				EC2CA0E522D98A56006DF213 /* LoginViewPresenter.swift in Sources */,
