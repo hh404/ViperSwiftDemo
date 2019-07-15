@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ZIKTViperViewEventHandler: class {
+protocol ViperViewEventHandler: class {
     func doViewDidLoad()
     func doViewWillAppear(_ animated: Bool)
     func doViewDidAppear(_ animated: Bool)

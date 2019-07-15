@@ -44,3 +44,7 @@ extension ViewController: ViperRouterProtocol {
     
     
 }
+
+extension ViewController: LoginViewDelegate {
+    
+}

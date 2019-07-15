@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// imp
-protocol ViperPresenterProtocol: class {
+protocol ViperPresenterProtocol: ViperViewEventHandler {
 //    weak var viperView: ZIKTViperViewEventHandler?
     var viperView: ViperViewProtocol? { get set } //weak
     var wireframe: ViperWireframeProtocol? { get set }

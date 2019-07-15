@@ -11,6 +11,6 @@ import UIKit
 
 protocol ViperViewProtocol: class {
     var routeSource: UIViewController? { get }
-    var eventHandler: ZIKTViperViewEventHandler? { get set }
+    var eventHandler: ViperViewEventHandler? { get set }
     var viewDataSource: Any? { get set }
 }

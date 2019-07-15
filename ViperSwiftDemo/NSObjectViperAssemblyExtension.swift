@@ -10,7 +10,18 @@ import Foundation
 
 extension NSObject {
     static func assembleViperForView(_ view: ViperViewProtocol, interactor: ViperInteractorProtocol, presenter: ViperPresenterProtocol, wireframe: ViperWireframeProtocol, router: ViperRouterProtocol) {
+        interactor.eventHandler = presenter
+        interactor.dataSource = presenter
         
+        wireframe.viperView = view;
+        wireframe.router = router;
+        
+        presenter.interactor = interactor;
+        presenter.viperView = view;
+        presenter.wireframe = wireframe;
+        
+        view.viewDataSource = presenter;
+        view.eventHandler = presenter;
     }
     
     /*+ (void)assembleViperForView:(id<ZIKTViperViewPrivate>)view

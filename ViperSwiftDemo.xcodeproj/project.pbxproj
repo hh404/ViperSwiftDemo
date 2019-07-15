@@ -21,6 +21,25 @@
 		D82322AF22D896EB00F95A84 /* ViperInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322AE22D896EB00F95A84 /* ViperInteractorProtocol.swift */; };
 		D82322B122D8976600F95A84 /* ViperWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B022D8976600F95A84 /* ViperWireframeProtocol.swift */; };
 		D82322B322D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322B222D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift */; };
+		EC2CA0D922D97951006DF213 /* LoginViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */; };
+		EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */; };
+		EC2CA0DD22D98852006DF213 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */; };
+		EC2CA0DF22D9890F006DF213 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DE22D9890E006DF213 /* LoginInteractor.swift */; };
+		EC2CA0E122D989A1006DF213 /* LoginViewEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0E022D989A1006DF213 /* LoginViewEventHandler.swift */; };
+		EC2CA0E322D989F1006DF213 /* LoginViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0E222D989F1006DF213 /* LoginViewWireframe.swift */; };
+		EC2CA0E522D98A56006DF213 /* LoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0E422D98A56006DF213 /* LoginViewPresenter.swift */; };
+		EC2CA0E922D98DB1006DF213 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0E822D98DB1006DF213 /* UserModel.swift */; };
+		EC2CA0EB22D98E3A006DF213 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0EA22D98E3A006DF213 /* LoginService.swift */; };
+		EC2CA0EE22D9F743006DF213 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0EC22D9F742006DF213 /* LoginViewController.swift */; };
+		EC2CA0EF22D9F743006DF213 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2CA0ED22D9F743006DF213 /* LoginViewController.xib */; };
+		EC2CA0F722DADC4B006DF213 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0F622DADC4B006DF213 /* NoteModel.swift */; };
+		EC2CA0F922DB4157006DF213 /* NoteListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0F822DB4157006DF213 /* NoteListDataService.swift */; };
+		EC2CA0FB22DB443A006DF213 /* NoteListViewEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0FA22DB443A006DF213 /* NoteListViewEventHandler.swift */; };
+		EC2CA0FD22DB44BA006DF213 /* NoteListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0FC22DB44BA006DF213 /* NoteListInteractorInput.swift */; };
+		EC2CA0FF22DB4C1D006DF213 /* NoteListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0FE22DB4C1D006DF213 /* NoteListViewDataSource.swift */; };
+		EC2CA10122DB4CB0006DF213 /* NoteListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA10022DB4CB0006DF213 /* NoteListViewProtocol.swift */; };
+		EC2CA10322DB4D7A006DF213 /* NoteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA10222DB4D7A006DF213 /* NoteListInteractor.swift */; };
+		EC2CA10522DB816A006DF213 /* NoteListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA10422DB816A006DF213 /* NoteListViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +80,25 @@
 		D82322AE22D896EB00F95A84 /* ViperInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractorProtocol.swift; sourceTree = "<group>"; };
 		D82322B022D8976600F95A84 /* ViperWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperWireframeProtocol.swift; sourceTree = "<group>"; };
 		D82322B222D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectViperAssemblyExtension.swift; sourceTree = "<group>"; };
+		EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDelegate.swift; sourceTree = "<group>"; };
+		EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
+		EC2CA0DE22D9890E006DF213 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		EC2CA0E022D989A1006DF213 /* LoginViewEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewEventHandler.swift; sourceTree = "<group>"; };
+		EC2CA0E222D989F1006DF213 /* LoginViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewWireframe.swift; sourceTree = "<group>"; };
+		EC2CA0E422D98A56006DF213 /* LoginViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPresenter.swift; sourceTree = "<group>"; };
+		EC2CA0E822D98DB1006DF213 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EC2CA0EA22D98E3A006DF213 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EC2CA0EC22D9F742006DF213 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC2CA0ED22D9F743006DF213 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EC2CA0F622DADC4B006DF213 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		EC2CA0F822DB4157006DF213 /* NoteListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListDataService.swift; sourceTree = "<group>"; };
+		EC2CA0FA22DB443A006DF213 /* NoteListViewEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewEventHandler.swift; sourceTree = "<group>"; };
+		EC2CA0FC22DB44BA006DF213 /* NoteListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListInteractorInput.swift; sourceTree = "<group>"; };
+		EC2CA0FE22DB4C1D006DF213 /* NoteListViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewDataSource.swift; sourceTree = "<group>"; };
+		EC2CA10022DB4CB0006DF213 /* NoteListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewProtocol.swift; sourceTree = "<group>"; };
+		EC2CA10222DB4D7A006DF213 /* NoteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListInteractor.swift; sourceTree = "<group>"; };
+		EC2CA10422DB816A006DF213 /* NoteListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +149,9 @@
 		D823227722D883D300F95A84 /* ViperSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EC2CA0F522DADC0C006DF213 /* NoteListModule */,
+				EC2CA0F422DADC0C006DF213 /* NoteModel */,
+				EC2CA0D722D97943006DF213 /* LoginModule */,
 				D823227822D883D300F95A84 /* AppDelegate.swift */,
 				D823227A22D883D300F95A84 /* ViewController.swift */,
 				D823227C22D883D300F95A84 /* Main.storyboard */,
@@ -144,6 +185,62 @@
 				D823229A22D883D800F95A84 /* Info.plist */,
 			);
 			path = ViperSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		EC2CA0D722D97943006DF213 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CA0E722D98D40006DF213 /* UserModel */,
+				EC2CA0E622D98CCB006DF213 /* LoginService */,
+				EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */,
+				EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */,
+				EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */,
+				EC2CA0DE22D9890E006DF213 /* LoginInteractor.swift */,
+				EC2CA0E022D989A1006DF213 /* LoginViewEventHandler.swift */,
+				EC2CA0E222D989F1006DF213 /* LoginViewWireframe.swift */,
+				EC2CA0E422D98A56006DF213 /* LoginViewPresenter.swift */,
+				EC2CA0EC22D9F742006DF213 /* LoginViewController.swift */,
+				EC2CA0ED22D9F743006DF213 /* LoginViewController.xib */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		EC2CA0E622D98CCB006DF213 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CA0EA22D98E3A006DF213 /* LoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		EC2CA0E722D98D40006DF213 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CA0E822D98DB1006DF213 /* UserModel.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		EC2CA0F422DADC0C006DF213 /* NoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CA0F622DADC4B006DF213 /* NoteModel.swift */,
+			);
+			path = NoteModel;
+			sourceTree = "<group>";
+		};
+		EC2CA0F522DADC0C006DF213 /* NoteListModule */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CA0F822DB4157006DF213 /* NoteListDataService.swift */,
+				EC2CA0FA22DB443A006DF213 /* NoteListViewEventHandler.swift */,
+				EC2CA0FC22DB44BA006DF213 /* NoteListInteractorInput.swift */,
+				EC2CA0FE22DB4C1D006DF213 /* NoteListViewDataSource.swift */,
+				EC2CA10022DB4CB0006DF213 /* NoteListViewProtocol.swift */,
+				EC2CA10222DB4D7A006DF213 /* NoteListInteractor.swift */,
+				EC2CA10422DB816A006DF213 /* NoteListViewPresenter.swift */,
+			);
+			path = NoteListModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2CA0EF22D9F743006DF213 /* LoginViewController.xib in Resources */,
 				D823228322D883D700F95A84 /* LaunchScreen.storyboard in Resources */,
 				D823228022D883D700F95A84 /* Assets.xcassets in Resources */,
 				D823227E22D883D300F95A84 /* Main.storyboard in Resources */,
@@ -279,13 +377,31 @@
 			files = (
 				D823227B22D883D300F95A84 /* ViewController.swift in Sources */,
 				D82322B122D8976600F95A84 /* ViperWireframeProtocol.swift in Sources */,
+				EC2CA10122DB4CB0006DF213 /* NoteListViewProtocol.swift in Sources */,
+				EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */,
 				D82322AD22D892D900F95A84 /* ViperRouterProtocol.swift in Sources */,
+				EC2CA0EE22D9F743006DF213 /* LoginViewController.swift in Sources */,
+				EC2CA0F722DADC4B006DF213 /* NoteModel.swift in Sources */,
 				D82322AB22D8880700F95A84 /* ViperPresenterProtocol.swift in Sources */,
 				D82322A922D886CE00F95A84 /* ViperViewProtocol.swift in Sources */,
 				D823227922D883D300F95A84 /* AppDelegate.swift in Sources */,
 				D82322A722D8840300F95A84 /* ViperViewEventHandler.swift in Sources */,
+				EC2CA0E922D98DB1006DF213 /* UserModel.swift in Sources */,
+				EC2CA0E122D989A1006DF213 /* LoginViewEventHandler.swift in Sources */,
+				EC2CA0FB22DB443A006DF213 /* NoteListViewEventHandler.swift in Sources */,
+				EC2CA0D922D97951006DF213 /* LoginViewDelegate.swift in Sources */,
+				EC2CA0F922DB4157006DF213 /* NoteListDataService.swift in Sources */,
+				EC2CA0DD22D98852006DF213 /* LoginInteractorInput.swift in Sources */,
+				EC2CA0E322D989F1006DF213 /* LoginViewWireframe.swift in Sources */,
+				EC2CA0EB22D98E3A006DF213 /* LoginService.swift in Sources */,
+				EC2CA0DF22D9890F006DF213 /* LoginInteractor.swift in Sources */,
+				EC2CA10322DB4D7A006DF213 /* NoteListInteractor.swift in Sources */,
 				D82322AF22D896EB00F95A84 /* ViperInteractorProtocol.swift in Sources */,
+				EC2CA0FD22DB44BA006DF213 /* NoteListInteractorInput.swift in Sources */,
 				D82322B322D89C3B00F95A84 /* NSObjectViperAssemblyExtension.swift in Sources */,
+				EC2CA0E522D98A56006DF213 /* LoginViewPresenter.swift in Sources */,
+				EC2CA0FF22DB4C1D006DF213 /* NoteListViewDataSource.swift in Sources */,
+				EC2CA10522DB816A006DF213 /* NoteListViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
