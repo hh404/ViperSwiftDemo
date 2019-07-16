@@ -16,15 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let noteListViewController = NoteListViewController()
-        //let nav = UINavigationController.init(rootViewController: noteListViewController)
-        
-        
-//        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-//        UIViewController *noteListViewController = [navigationController.viewControllers firstObject];
-//        [ZIKTNoteListModuleBuilder buildView:(id)noteListViewController
-//            noteListDataService:[ZIKTNoteDataManager sharedInsatnce]
-//            router:(id<ZIKTNoteListRouter>)application.ZIKT_router];
+
+        let vc = NoteListModuleBuilder.viewControllerWithNoteListDataService(NoteDataManager.shared, router: UIApplication.viperRouter() as! NoteListRouter)
+        self.window?.rootViewController = vc
         
         return true
     }

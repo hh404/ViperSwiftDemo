@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension Router {
+extension Router: NoteListRouter {
     class func loginViewWithMessage(_ message: String, delegate: LoginViewDelegate) -> UIViewController {
         return LoginBuilder.viewWithMessage(message, delegate: delegate, router: Router())
     }

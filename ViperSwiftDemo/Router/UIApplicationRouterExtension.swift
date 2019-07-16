@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIApplication {
-    func viperRouter() -> Router {
+    static func viperRouter() -> Router {
         return Router()
     }
 }

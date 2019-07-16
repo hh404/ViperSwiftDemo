@@ -29,6 +29,7 @@
 		D82322C022DC542900F95A84 /* NoteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322BF22DC542900F95A84 /* NoteListRouter.swift */; };
 		D82322C222DC664500F95A84 /* NoteListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322C122DC664500F95A84 /* NoteListModuleBuilder.swift */; };
 		D82322C422DC677500F95A84 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322C322DC677500F95A84 /* NoteListViewController.swift */; };
+		D82322C722DD8DB500F95A84 /* NoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82322C622DD8DB500F95A84 /* NoteDataManager.swift */; };
 		EC2CA0D922D97951006DF213 /* LoginViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */; };
 		EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */; };
 		EC2CA0DD22D98852006DF213 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */; };
@@ -96,6 +97,7 @@
 		D82322BF22DC542900F95A84 /* NoteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRouter.swift; sourceTree = "<group>"; };
 		D82322C122DC664500F95A84 /* NoteListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListModuleBuilder.swift; sourceTree = "<group>"; };
 		D82322C322DC677500F95A84 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		D82322C622DD8DB500F95A84 /* NoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDataManager.swift; sourceTree = "<group>"; };
 		EC2CA0D822D97951006DF213 /* LoginViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDelegate.swift; sourceTree = "<group>"; };
 		EC2CA0DA22D97D07006DF213 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		EC2CA0DC22D98852006DF213 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
@@ -214,6 +216,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		D82322C522DD8D8F00F95A84 /* NoteDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D82322C622DD8DB500F95A84 /* NoteDataManager.swift */,
+			);
+			path = NoteDataManager;
+			sourceTree = "<group>";
+		};
 		EC2CA0D722D97943006DF213 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		EC2CA0F522DADC0C006DF213 /* NoteListModule */ = {
 			isa = PBXGroup;
 			children = (
+				D82322C522DD8D8F00F95A84 /* NoteDataManager */,
 				EC2CA0F822DB4157006DF213 /* NoteListDataService.swift */,
 				EC2CA0FA22DB443A006DF213 /* NoteListViewEventHandler.swift */,
 				EC2CA0FC22DB44BA006DF213 /* NoteListInteractorInput.swift */,
@@ -410,6 +421,7 @@
 				D823227B22D883D300F95A84 /* ViewController.swift in Sources */,
 				D82322B122D8976600F95A84 /* ViperWireframeProtocol.swift in Sources */,
 				EC2CA10122DB4CB0006DF213 /* NoteListViewProtocol.swift in Sources */,
+				D82322C722DD8DB500F95A84 /* NoteDataManager.swift in Sources */,
 				EC2CA0DB22D97D07006DF213 /* LoginViewProtocol.swift in Sources */,
 				D82322BC22DC2F0000F95A84 /* ViperRouterExtension.swift in Sources */,
 				D82322AD22D892D900F95A84 /* ViperRouterProtocol.swift in Sources */,

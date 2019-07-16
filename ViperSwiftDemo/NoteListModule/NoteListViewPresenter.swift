@@ -12,7 +12,11 @@ import UIKit
 class NoteListViewPresenter: ViperPresenterProtocol, NoteListViewEventHandler, NoteListViewDataSource {
     weak var viperView: ViperViewProtocol?
     
-    var wireframe: ViperWireframeProtocol?
+    var wireframe: ViperWireframeProtocol? {
+        didSet {
+            self.listWireframe = self.wireframe as? TNoteListWireframe
+        }
+    }
     
     var listWireframe: TNoteListWireframe?
     
@@ -82,6 +86,9 @@ class NoteListViewPresenter: ViperPresenterProtocol, NoteListViewEventHandler, N
 
 extension NoteListViewPresenter: LoginViewDelegate {
     func loginViewController(_ loginViewController: UIViewController, didLoginWithAccount: String) {
-        
+        self.logined = true
+        self.listWireframe?.dismissLoginView(loginViewController, animated: true, completion: {
+            
+        })
     }
 }

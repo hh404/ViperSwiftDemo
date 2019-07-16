@@ -84,3 +84,16 @@ class LoginViewController: UIViewController, ViperViewProtocol {
     */
 
 }
+
+
+extension LoginViewController: LoginViewProtocol {
+    var account: String? {
+        return self.accountTextField?.text
+    }
+    
+    var password: String? {
+        return self.passwordTextField?.text
+    }
+    
+    
+}

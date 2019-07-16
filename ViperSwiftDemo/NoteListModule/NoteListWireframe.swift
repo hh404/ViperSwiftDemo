@@ -13,7 +13,11 @@ import UIKit
 class TNoteListWireframe: ViperWireframeProtocol {
     weak var viperView: ViperViewProtocol?
     
-    var router: ViperRouterProtocol?
+    var router: ViperRouterProtocol? {
+        didSet {
+            self.listRouter = self.router as? NoteListRouter
+        }
+    }
     
     var listRouter: NoteListRouter?
     

@@ -53,6 +53,11 @@ class TNoteListInteractor: ViperInteractorProtocol, NoteListInteractorInput {
     private var currentEditingNote: NoteModel?
     private var noteListDataService: NoteListDataService?
     
+    
+    init(_ service: NoteListDataService) {
+        self.noteListDataService = service
+    }
+    
     func initWithNoteListDataService(_ service: NoteListDataService) {
         self.noteListDataService = service
     }

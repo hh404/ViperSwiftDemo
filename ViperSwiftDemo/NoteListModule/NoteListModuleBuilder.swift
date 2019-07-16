@@ -10,34 +10,40 @@ import Foundation
 import UIKit
 
 class NoteListModuleBuilder: NSObject {
-    func viewControllerWithNoteListDataService(_ service: NoteListDataService,router: NoteListRouter) -> UIViewController {
+    static func viewControllerWithNoteListDataService(_ service: NoteListDataService,router: NoteListRouter) -> UIViewController {
         let view = NoteListViewController()
         
 //        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //        UIViewController *view = [sb instantiateViewControllerWithIdentifier:@"ZIKTNoteListViewController"];
 //        NSAssert([view isKindOfClass:[ZIKTNoteListViewController class]], nil);
 //        [self buildView:(id<ZIKTViperViewPrivate>)view noteListDataService:service router:router];
+        NoteListModuleBuilder.buildView(view, service: service, router: router)
         return view;
     }
     
-    /*func buildView(_ view: ViperViewProtocol, service: NoteListDataService, router: NoteListRouter) {
-        
-        ZIKTNoteListViewPresenter *presenter = [[ZIKTNoteListViewPresenter alloc] init];
-        ZIKTNoteListInteractor *interactor = [[ZIKTNoteListInteractor alloc] initWithNoteListDataService:service];
-        
+    static func buildView(_ view: ViperViewProtocol, service: NoteListDataService, router: NoteListRouter) {
+        let presenter = NoteListViewPresenter()
+        let interactor = TNoteListInteractor.init(service)
+//        ZIKTNoteListViewPresenter *presenter = [[ZIKTNoteListViewPresenter alloc] init];
+//        ZIKTNoteListInteractor *interactor = [[ZIKTNoteListInteractor alloc] initWithNoteListDataService:service];
+//
         interactor.eventHandler = presenter;
         interactor.dataSource = presenter;
-        
-        id<ZIKTViperWireframePrivate> wireframe = (id)[[ZIKTNoteListWireframe alloc] init];
-        NSAssert([wireframe conformsToProtocol:@protocol(ZIKTViperWireframePrivate)], nil);
-        wireframe.view = view;
+        let wireframe = TNoteListWireframe.init()
+//
+//        id<ZIKTViperWireframePrivate> wireframe = (id)[[ZIKTNoteListWireframe alloc] init];
+//        NSAssert([wireframe conformsToProtocol:@protocol(ZIKTViperWireframePrivate)], nil);
+        wireframe.viperView = view;
         wireframe.router = router;
-        
-        [(id<ZIKTViperPresenterPrivate>)presenter setView:view];
-        [(id<ZIKTViperPresenterPrivate>)presenter setWireframe:wireframe];
-        [(id<ZIKTViperPresenterPrivate>)presenter setInteractor:interactor];
-        
+        presenter.viperView = view
+        presenter.wireframe = wireframe
+        presenter.interactor = interactor
+//
+//        [(id<ZIKTViperPresenterPrivate>)presenter setView:view];
+//        [(id<ZIKTViperPresenterPrivate>)presenter setWireframe:wireframe];
+//        [(id<ZIKTViperPresenterPrivate>)presenter setInteractor:interactor];
+//
         view.eventHandler = presenter;
         view.viewDataSource = presenter;
-    }*/
+    }
 }

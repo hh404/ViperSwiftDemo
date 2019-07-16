@@ -24,7 +24,11 @@ class NoteListViewController: UIViewController, ViperViewProtocol, NoteListViewP
         }
     }
     
-    var eventHandler: ViperViewEventHandler?
+    var eventHandler: ViperViewEventHandler? {
+        didSet {
+            self.listEventHandler = self.eventHandler as? NoteListViewEventHandler
+        }
+    }
     
     var viewDataSource: Any?
     
